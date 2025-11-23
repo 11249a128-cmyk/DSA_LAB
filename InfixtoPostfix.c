@@ -1,6 +1,26 @@
 🕧Aim:
      // To convert an infix expression to postfix expression using stack operation //
 
+🕑Algorithm:
+           1. INITIALIZE AN EMPTY STACK AND AN EMPTY POSTFIX STRING.
+           2. PUSH '(' ONTO THE STACK AND ADD ')' TO THE END OF THE INFIX EXPRESSION
+           3. FOR EACH SYMBOL X IN THE INFIX EXPRESSION, DO:
+                a. IF X IS AN OPERAND, ADD X TO THE POSTFIX STRING.
+                b. IF X IS '(', PUSH IT ONTO THE STACK.
+                c. IF X IS AN OPERATOR, THEN:
+                     WHILE (STACK IS NOT EMPTY) AND (PRECEDENCE OF TOP OF STACK ≥
+                     PRECEDENCE OF X):
+                     POP OPERATOR FROM STACK AND ADD IT TO POSTFIX STRING.
+                    
+                     PUSH X ONTO THE STACK.
+                 d. IF X IS ')', THEN:
+                WHILE THE TOP OF THE STACK IS NOT '(':
+                POP OPERATOR FROM STACK AND ADD IT TO POSTFIX STRING.
+                POP '(' FROM THE STACK AND DISCARD IT.
+           4. END FOR
+           5. THE RESULTING POSTFIX STRING IS THE FINAL OUTPUT.
+           6.END
+
 🕧Programe :
             #include <stdio.h>
             #include <stdlib.h>
