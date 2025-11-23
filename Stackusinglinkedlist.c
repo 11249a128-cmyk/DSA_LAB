@@ -1,6 +1,38 @@
 🕧Aim:
      // To implement Stack operations using Linked List in C, including push, pop and display functions, by dynamically creating and managing nodes as per the given algorithm //
 
+🕑Algorithm:
+           PUSH Operation (Insert at Top)
+               Step 1: Create a new node.
+               Step 2: If memory not available, display "Stack Overflow".
+               Step 3: Set new node → data = item.
+               Step 4: Set new node → next = top.
+               Step 5: Set top = new node.
+               Step 6: End PUSH operation.
+               
+          POP Operation (Delete from Top)
+               Step 1: Check if top == NULL.
+               Step 2: If true, display "Stack Underflow".
+               Step 3: Else set temp = top.
+               Step 4: Set item = top → data.
+               Step 5: Move top = top → next.
+               Step 6: Free temp node.
+               Step 7: Return deleted item.
+               Step 8: End POP operation.
+               
+          PEEK Operation
+               Step 1: Check if top == NULL.
+               Step 2: If true, display "Stack is Empty".
+               Step 3: Else display top → data.
+               Step 4: End PEEK operation.
+               
+          DISPLAY Operation
+               Step 1: Check if top == NULL.
+               Step 2: If true, display "Stack is Empty".
+               Step 3: Else, traverse from top to NULL.
+               Step 4: Print each node’s data.
+               Step 5: End DISPLAY operation.
+     
 🕧Programe:
             #include <stdio.h>
             #include <stdlib.h>
