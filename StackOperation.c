@@ -1,6 +1,26 @@
 🕧AIM: 
      // To find the required element in stack opreation //
 
+🕑ALGORITHM:
+      PUSH  Operation:
+           1.Check if TOP == MAX - 1.
+           2.If true, display "Stack Overflow".
+           3.Else increment TOP by 1.
+           4.Set stack[TOP] = item.
+           5.End PUSH operation.
+      POP Operation:
+           1.Check if TOP == -1.
+           2.If true, display "Stack Underflow".
+           3.Else set item = stack[TOP].
+           4.Decrement TOP by 1.
+           5.Return deleted item.
+     PEEK Operation:
+           1. Check if TOP == -1.
+           2. If true, display "Stack is Empty".
+           3. Else set item = stack[TOP].
+           4. Display item.
+           5. End PEEK operation.
+
 🕧Programe :
             #include <stdio.h>
             #define MAX 100  // Maximum size of the stack
