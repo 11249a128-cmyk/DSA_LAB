@@ -1,6 +1,13 @@
 🕧AIM:
      // To find the required element in linear Search //
 
+🕑Algorithm:
+         1. start from index 0 and compare each element with target.
+         2. if arr[i] is not equal to target, increment i.
+         3. Continue until you find arr[i] equals the target.
+         4. Return the index i where the target is found.
+         5. If end is reached and target is not found return -1.
+     
 🕧Programe :
             #include <stdio.h>
             int main()
