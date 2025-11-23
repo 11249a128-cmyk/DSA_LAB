@@ -1,6 +1,51 @@
 🕧Aim:
        // To write a C program to perform all operations on a Doubly Linked List, including insertion (beginning, position, end), deletion (beginning, position, end, by value), searching, and is playing the list in forward and backward directions //
 
+🕑Algorithm:
+          1. Create a structure Node with:
+              data
+              prev pointer
+              next pointer
+          2. CreateNode(data)
+              Allocate memory
+              Initialize data, prev = NULL, next = NULL
+              Return node
+          3. InsertAtBeginning(head, data)
+              Create new node
+              If list not empty:
+              newNode → next = head
+              head → prev = newNode
+              head = newNode
+          4. InsertAtEnd(head, data)
+              Create new node
+              If head is NULL:
+              head = newNode
+              Else:
+              Traverse to last node
+              last → next = newNode
+              newNode → prev = last
+           5. InsertAtPosition(head, data, pos)
+              If pos = 1 → InsertAtBeginning
+              Else traverse to position-1
+              If position invalid → print error
+              Insert node by adjusting 4 links
+           6. DeleteNode(head, value)
+              If list empty → print error
+              Traverse until node with value is found
+              Adjust pointers depending on:
+              deleting head
+              deleting last
+              deleting middle
+              Free the node
+            7. DisplayList(head)
+              Traverse forward
+              Print prev/data/next for each node
+            8. DisplayReverse(head)
+              Traverse to last node
+              Then traverse backward
+              Print prev/data/next
+            9.End
+       
 🕧Programe :
             #include <stdio.h>
             #include <stdlib.h>
