@@ -1,6 +1,57 @@
 🕧Aim:
       // To implement a Circular Queue using Linked List  with enqueue, dequeue, and display operations //
 
+🕑Algorithm:
+            1. Start
+            2. Initialize
+                  Set front = NULL
+                  Set rear = NULL
+            3. Repeat the following steps until the user chooses to Exit:
+                  Display Menu
+                  Enqueue
+                  Dequeue
+                  Peek
+                  Display
+                  Exit
+                  Read user choice
+            4. Perform operation based on the choice
+              Case 1: Enqueue
+                  Read the value data to insert.
+                  Create a new node with given data.
+                  If queue is empty (rear == NULL)
+                  Set front = newnode
+                  Set rear = newnode
+                  Else
+                  Set rear->next = newnode
+                  Update rear = newnode
+                  Display “Enqueued successfully”.
+             Case 2: Dequeue
+                  If queue is empty (front == NULL)
+                  Display “Queue is empty. Dequeue not possible.”
+                  Go back to main loop.
+                  Else
+                  Store the node pointed by front in temporary variable temp
+                  Print the value to be remove
+                  Update front = front->next
+                  If front becomes NULL, set rear = NULL
+                  Free the memory of temp
+             Case 3: Peek
+                  If queue is empty (front == NULL)
+                  Print “Queue is empty”
+                  Else
+                  Print the value at front->data
+             Case 4: Display Queue
+                  If queue is empty
+                  Print “Queue is empty”
+                  Else
+                  Traverse from front to rear, printing each element
+             Case 5: Exit
+                  Print “Exiting…”
+                  Terminate the program
+                  Default Case
+                  Print “Invalid choice! Try again”
+            5. Stop
+
 🕧Programe :
             #include <stdlib.h>
             #include <stdio.h>
