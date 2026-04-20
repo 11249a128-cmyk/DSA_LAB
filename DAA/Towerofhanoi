@@ -1,5 +1,11 @@
-                                                                               //**TOWER OF HANOI**//
-👉 Program:    
+                                                                          //**TOWER OF HANOI**//
+
+🕒AIm :
+       To design and implement the solution of the Tower of Hanoi problem using recursion, and 
+        to demonstrate the movement of disks between rods following the defined rules.
+
+
+🕒Program :    
           #include <stdio.h>
           void TOH(int n, char S, char A, char D)
           {
