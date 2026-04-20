@@ -1,7 +1,8 @@
                                                          **// Bin packing First fit //**
 
 🕒AIM : 
-       To implement the First Fit heuristic for the Bin Packing Problem, which assigns each item to the first available bin with sufficient remaining capacity in order to reduce the total number of bins used
+       To implement the First Fit heuristic for the Bin Packing Problem, which assigns each item to the first available 
+        bin with sufficient remaining capacity in order to reduce the total number of bins used.
 
 
 🕒programe : 
